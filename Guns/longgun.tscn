@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://danhym1kbdr6b"]
+
+[ext_resource type="PackedScene" uid="uid://dtuev2v7jfelp" path="res://Guns/gun.tscn" id="1_wku3c"]
+[ext_resource type="Texture2D" uid="uid://bi7mveoaxwq6t" path="res://assets/newgrass.png" id="2_yuf2u"]
+
+[node name="longgun" instance=ExtResource("1_wku3c")]
+position = Vector2(9, -1)
+
+[node name="shoot_pos" parent="." index="0"]
+position = Vector2(14, -0.5)
+
+[node name="Newgrass" type="Sprite2D" parent="." index="1"]
+rotation = -0.785397
+texture = ExtResource("2_yuf2u")
+region_enabled = true
+region_rect = Rect2(134, 486, 19, 18)
+
+[node name="handle_pos" parent="." index="2"]
+position = Vector2(-9, 1)

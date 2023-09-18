@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6ifi118cspb0"]
+
+[ext_resource type="PackedScene" uid="uid://dtuev2v7jfelp" path="res://Guns/gun.tscn" id="1_hfmj3"]
+[ext_resource type="Texture2D" uid="uid://bi7mveoaxwq6t" path="res://assets/newgrass.png" id="2_5sa2c"]
+
+[node name="handgun" instance=ExtResource("1_hfmj3")]
+position = Vector2(4, -2)
+
+[node name="shoot_pos" parent="." index="0"]
+position = Vector2(8, 0)
+
+[node name="Newgrass" type="Sprite2D" parent="." index="1"]
+position = Vector2(0, 2)
+texture = ExtResource("2_5sa2c")
+region_enabled = true
+region_rect = Rect2(17, 499, 15, 5)
+
+[node name="handle_pos" parent="." index="2"]
+position = Vector2(-4, 2)

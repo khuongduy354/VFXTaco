@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://ca60qxromc6km"]
+
+[ext_resource type="Texture2D" uid="uid://b6o1d5h1gcy7u" path="res://assets/World Forest Background.png" id="1_3d8wp"]
+[ext_resource type="PackedScene" uid="uid://b1t4jsxf48hs5" path="res://Player/player.tscn" id="2_0djxe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ownyv"]
+size = Vector2(481, 20)
+
+[node name="World" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(520, 415)
+scale = Vector2(3.44, 1)
+shape = SubResource("RectangleShape2D_ownyv")
+
+[node name="WorldForestBackground" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(572, 329)
+scale = Vector2(1.04864, 1.04864)
+texture = ExtResource("1_3d8wp")
+
+[node name="Player" parent="." instance=ExtResource("2_0djxe")]
+position = Vector2(111, 266)
