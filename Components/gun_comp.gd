@@ -1,4 +1,5 @@
 extends Node2D
+class_name GunComponent
 
 var gun =null
 func wield_gun(type:Global.gun_type): 

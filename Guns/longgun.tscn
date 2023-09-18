@@ -1,13 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://danhym1kbdr6b"]
+[gd_scene load_steps=4 format=3 uid="uid://danhym1kbdr6b"]
 
 [ext_resource type="PackedScene" uid="uid://dtuev2v7jfelp" path="res://Guns/gun.tscn" id="1_wku3c"]
+[ext_resource type="PackedScene" uid="uid://80orcbdxwx5g" path="res://Guns/simplebullet.tscn" id="2_l4bl7"]
 [ext_resource type="Texture2D" uid="uid://bi7mveoaxwq6t" path="res://assets/newgrass.png" id="2_yuf2u"]
 
 [node name="longgun" instance=ExtResource("1_wku3c")]
 position = Vector2(9, -1)
+BulletScene = ExtResource("2_l4bl7")
 
 [node name="shoot_pos" parent="." index="0"]
-position = Vector2(14, -0.5)
+position = Vector2(17, -0.5)
 
 [node name="Newgrass" type="Sprite2D" parent="." index="1"]
 rotation = -0.785397

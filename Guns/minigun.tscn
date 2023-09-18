@@ -1,13 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://of3rqpm0upo8"]
+[gd_scene load_steps=4 format=3 uid="uid://of3rqpm0upo8"]
 
 [ext_resource type="PackedScene" uid="uid://dtuev2v7jfelp" path="res://Guns/gun.tscn" id="1_sftil"]
 [ext_resource type="Texture2D" uid="uid://bi7mveoaxwq6t" path="res://assets/newgrass.png" id="2_8n64f"]
+[ext_resource type="PackedScene" uid="uid://80orcbdxwx5g" path="res://Guns/simplebullet.tscn" id="2_hsw2x"]
 
 [node name="minigun" instance=ExtResource("1_sftil")]
 position = Vector2(9, 2)
+BulletScene = ExtResource("2_hsw2x")
 
 [node name="shoot_pos" parent="." index="0"]
-position = Vector2(13, 0)
+position = Vector2(16, 0)
 
 [node name="Newgrass" type="Sprite2D" parent="." index="1"]
 texture = ExtResource("2_8n64f")

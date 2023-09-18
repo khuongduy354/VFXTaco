@@ -8,3 +8,7 @@ script = ExtResource("1_r5bw7")
 [node name="shoot_pos" type="Marker2D" parent="."]
 
 [node name="handle_pos" type="Marker2D" parent="."]
+
+[node name="shoot_cooldown" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
